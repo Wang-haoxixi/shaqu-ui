@@ -1,0 +1,58 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "vue-cli-service serve --port 8081 --mode htwl",
+    "test": "vue-cli-service build --mode htwl",
+    "build": "vue-cli-service build --mode prod",
+    "lint": "vue-cli-service lint",
+    "start:prod": "vue-cli-service serve --port 8081  --mode prod",
+    "ziiwee": "vue-cli-service serve --port 8081 --mode ziiwee"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "echarts": "^4.9.0",
+    "element-ui": "^2.14.1",
+    "js-cookie": "^2.2.1",
+    "jsencrypt": "^3.2.1",
+    "less": "^4.1.1",
+    "less-loader": "^5.0.0",
+    "moment": "^2.29.1",
+    "mux.js": "^5.10.0",
+    "nprogress": "^0.2.0",
+    "qrcodejs2": "^0.0.2",
+    "recast": "^0.20.4",
+    "video.js": "^7.11.4",
+    "videojs-contrib-hls": "^5.15.0",
+    "view-design": "^4.5.0",
+    "vue": "^2.6.11",
+    "vue-print-nb": "^1.7.5",
+    "vue-qr": "^4.0.6",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^9.5.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

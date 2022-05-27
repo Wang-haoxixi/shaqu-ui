@@ -1,0 +1,24 @@
+export const PHONE_REGEXP = /^1[3456789]\d{9}$/; // 手机
+export const PASSWORD_REGEXP = /^((?=.*?[a-z])(?=.*?[A-Z])(?=.*?\d)(?=.*?[!@#$._])).{6,16}$/; //  密码规则
+export const PHONE_REGEXP_NULL = /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/; // 手机
+export const EMAIL_REGEXP = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/; // email
+export const TABLENUM = /^[a-zA-Z0-9]{9}$/; // 9位数字字母
+export const EMAIL_REGEXP_NULL = /(^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+)|(^$)/; // 正则邮箱可以为空
+export const INTEGER_REGEXP = /^\d{1,9}$/; // 整数
+export const INTEGER_REGEXP_NULL = /^$|^\d{1,10}$/; // 整数 可以为空
+export const CZ =  /^(\d{3,4}-)?\d{7,8}$/; // 传真
+export const CZ_NULL =  /^$|^(\d{3,4}-)?\d{7,8}$/; // 传真 可以为空
+export const DECIMAL_REGEXP = /^\d{1,10}(?:\.\d{1,3})?$/; // 小数不超过3位,整数不超过10位
+export const DECIMAL_REGEXPS = /^\d{1,10}(?:\.\d{1,6})?$/; // 小数不超过6位,整数不超过10位
+export const DECIMAL_REGEXP_NULL = /^$|^\d{1,9}(?:\.\d{1,3})?$/; // 小数不超过3位,整数不超过9位,可以为空
+export const POSTA_CODE_REGXP = /^[0-8][0-7]\d{4}$/;  // ##简单邮政编码验证
+export const POSTA_CODE_REGXP_NULL = /^$|^[0-8][0-7]\d{4}$/;  // ##简单邮政编码验证 可以为空、
+export const YEAR = /^(1949|19[5-9]\d|20\d{2}|2100)$/;
+export const NICK = /^[0-9a-zA-Z\u4e00-\u9fa5]+$/ ;
+export const WAST_CODE = /[0-9]{3}-?[0-9]{3}-?[0-9]{2}$/; // 危废代码xxx-xxx-xx
+export const LATLONG = /[0-9]{1,3}-[0-9]{1,3}-[0-9]{1,3}$/; // 经纬度xxx-xxx-xx
+export const LATLONG_PART = /^[0-9]{1,3}$/; // 经纬度的度,分,秒xxx
+export const TELEPHONE = /^((0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/;  // 座机
+export const DH_PHONE = /^((((0\d{2,3})-)(\d{7,8})(-(\d{3,}))?)|(1[3456789]\d{9}))$/;  // 电话或手机
+export const NAME_PASS = /[0-9A-Za-z]{4,16}$/;  // 用户名密码
+export const UNIFIED_SOCIAL_CREDIT_CODE = /^[0-9A-HJ-NPQRTUWXY]{2}\d{6}[0-9A-HJ-NPQRTUWXY]{10}$/   //统一社会信用代码
